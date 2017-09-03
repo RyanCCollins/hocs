@@ -3,7 +3,7 @@ A library of the React HOCs that I use on a daily basis
 
 ## Docs
 
-### Types
+FYI
 ```
 type HOC = (Component: JSX.Element) => JSX.Element
 ```
