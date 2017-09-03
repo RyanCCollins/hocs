@@ -1,19 +1,5 @@
 /* withUniqueKey
-Add a unique key to a specified prop array in order to meet React's unique key requirement.
-
-Example:
-const Component = withKeyIndex('items')(({ items }) => (
-  <List>
-    {items.map(item =>
-      <ListItem {...item} /> // has a unique key property
-    )}
-  </List>
-))
-const items = [
-  { title: 'one' },
-  { title: 'two' },
-]
-<Component items={items} />
+Add a unique key to each object in an array of objects in order to satisfy [React's unique key requirements](https://facebook.github.io/react/docs/lists-and-keys.html) when mapping over that array.
 */
 import { mapProps, InferableComponentEnhancerWithProps } from 'recompose'
 
