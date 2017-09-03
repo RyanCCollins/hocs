@@ -4,7 +4,7 @@ A library of the React HOCs that I use on a daily basis
 ## Docs
 - [`withUniqueKey`](https://github.com/RyanCCollins/hocs/blob/master/src/withUniqueKey.ts)
 
-Add a unique key to each object in an array of objects in order to satisfy React's unique key requirements.
+Add a unique key to each object in an array of objects in order to satisfy [React's unique key requirements](https://facebook.github.io/react/docs/lists-and-keys.html).
 
 Example:
 ```
