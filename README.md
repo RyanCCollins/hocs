@@ -2,7 +2,7 @@
 A library of the React HOCs that I use on a daily basis
 
 ## Docs
-- `withUniqueKey`
+- [`withUniqueKey`](https://github.com/RyanCCollins/hocs/blob/master/src/withUniqueKey.ts)
 Add a unique key to a specified prop array in order to meet React's unique key requirement.
 
 Example:
