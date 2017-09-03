@@ -1,0 +1,23 @@
+{
+  "name": "hocs",
+  "version": "1.0.0",
+  "description": "A library of the React HOCs that I use daily",
+  "main": "dist/index.js",
+  "repository": "https://github.com/RyanCCollins/hocs",
+  "author": "Ryan C. Collins <rccproductions@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "@types/recompose": "^0.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "recompose": "^0.25.0",
+    "ts-loader": "^2.3.4",
+    "tslint": "^5.7.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.5"
+  }
+}
