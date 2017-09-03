@@ -2,15 +2,18 @@
 Add a unique key to a specified prop array
 
 Example:
-const enhance = withKeyIndex('items')
-
-const Component = enhance(({ items }) => (
-  <div>
+const Component = withKeyIndex('items')(({ items }) => (
+  <List>
     {items.map(item =>
-      <Item {...item} /> // has a unique key property
+      <ListItem {...item} /> // has a unique key property
     )}
-  </div>
+  </List>
 ))
+const items = [
+  { title: 'one' },
+  { title: 'two' },
+]
+<Component items={items} />
 */
 import { mapProps, InferableComponentEnhancerWithProps } from 'recompose'
 
