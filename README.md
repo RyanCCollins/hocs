@@ -5,7 +5,7 @@ A library of the React HOCs that I use on a daily basis
 
 ### Types
 ```
-type HOC = (WrappedComponent) => JSX.Element
+type HOC = (Component: JSX.Element) => JSX.Element
 ```
 
 - [`withUniqueKey`](https://github.com/RyanCCollins/hocs/blob/master/src/withUniqueKey.ts): `(key: string) => HOC`
