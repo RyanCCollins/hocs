@@ -6,6 +6,7 @@ A library of the React HOCs that I use on a daily basis
 Add a unique key to a specified prop array in order to meet React's unique key requirement.
 
 Example:
+```
 const Component = withKeyIndex('items')(({ items }) => (
   <List>
     {items.map(item =>
@@ -18,3 +19,4 @@ const items = [
   { title: 'two' },
 ]
 <Component items={items} />
+```
