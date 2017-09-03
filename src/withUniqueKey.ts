@@ -1,5 +1,7 @@
 /* withUniqueKey
-Add a unique key to each object in an array of objects in order to satisfy [React's unique key requirements](https://facebook.github.io/react/docs/lists-and-keys.html) when mapping over that array.
+Add a unique key to each object in an array of 
+objects in order to satisfy [React's unique key requirements](https://facebook.github.io/react/docs/lists-and-keys.html) 
+when mapping over that array.
 */
 import { mapProps, InferableComponentEnhancerWithProps } from 'recompose'
 
