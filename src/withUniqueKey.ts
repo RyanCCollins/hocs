@@ -26,7 +26,7 @@ export interface Props {
   [key: string]: Array<{}>
 }
 
-const withUniqueKey = (key: string): InferableComponentEnhancerWithProps<Props, {}> => mapProps(
+const withUniqueKey = (key: string) => mapProps(
   (props: Props) => ({ ...props, [key]: keyIndex(props[key]) }),
 )
 
