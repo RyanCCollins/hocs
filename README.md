@@ -3,10 +3,8 @@ A library of the React HOCs that I use on a daily basis
 
 ## Docs
 
-FYI
-```
-type HOC = (Component: JSX.Element) => JSX.Element
-```
+### Higher Order Components (HOCs)
+Below is a list of HOCs that this library includes
 
 - [`withUniqueKey`](https://github.com/RyanCCollins/hocs/blob/master/src/withUniqueKey.ts): `(key: string) => HOC`
 
@@ -26,4 +24,11 @@ const items = [
   { title: 'two' },
 ]
 <Component items={items} />
+```
+
+### Type Glossary
+Below are a few types that you might find useful when reading these docs
+
+```
+type HOC = (Component: JSX.Element) => JSX.Element
 ```
