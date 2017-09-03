@@ -34,6 +34,7 @@ describe('withUniqueKeyIndex', () => {
 
     EnhancedComponent = withUniqueKey('items')(Component)
   })
+  
   it('does not have a key prop before being enhanced', () => {
     const Wrapper = shallow(<Component {...props} />)
     expect(Wrapper.find('li').first().props().key).toBeUndefined()
