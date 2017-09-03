@@ -1,5 +1,5 @@
 /* withUniqueKey
-Add a unique key to a specified prop array
+Add a unique key to a specified prop array in order to meet React's unique key requirement.
 
 Example:
 const Component = withKeyIndex('items')(({ items }) => (
