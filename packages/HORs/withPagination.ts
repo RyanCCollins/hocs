@@ -18,26 +18,3 @@ const withPagination = (actionPrefix) => (reducer) => (state, action) => {
 }
 
 export default withPagination
-
-/*
-Example:
-const initialState = {
-  pagination: {
-    currentPage: 1,
-    perPage: 8,
-  }
-}
-
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-  case 'FOO':
-    return {
-      ...state,
-      foo: 'bar',
-    }
-  default: return state
-  }
-}
-
-const enhancedReducer = withPagination()(reducer)
-*/
