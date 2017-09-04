@@ -5,3 +5,4 @@ export {
   selectCurrentPage,
   selectPerPage,
 } from './withPagination'
+export { default as withRequest } from './withRequest'
