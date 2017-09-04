@@ -1,1 +1,7 @@
-export { default as withPagination } from './withPagination'
+export {
+  default as withPagination,
+  paginationState,
+  selectPagination,
+  selectCurrentPage,
+  selectPerPage,
+} from './withPagination'

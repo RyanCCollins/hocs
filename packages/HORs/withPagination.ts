@@ -28,3 +28,15 @@ const withPagination = (actionPrefix: string) =>
   }
 
 export default withPagination
+
+export const paginationState: State = {
+  pagination: {
+    currentPage: 1,
+    perPage: 8,
+  },
+}
+
+export const selectPagination = (state) => state.pagination
+
+export const selectCurrentPage = (state) => selectPagination(state).currentPage
+export const selectPerPage = (state) => selectPagination(state).perPage
