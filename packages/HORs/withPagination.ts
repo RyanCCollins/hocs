@@ -21,7 +21,14 @@ export default withPagination
 
 /*
 Example:
-const reducer = (state, action) => {
+const initialState = {
+  pagination: {
+    currentPage: 1,
+    perPage: 8,
+  }
+}
+
+const reducer = (state = initialState, action) => {
   switch (action.type) {
   case 'FOO':
     return {
