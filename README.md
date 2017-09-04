@@ -34,12 +34,13 @@ Enhance a reducer with pagination abilities. (NOTE: I will try to add some selec
 Example:
 
 ```
-const initialState = {
-  pagination: {
-    currentPage: 1,
-    perPage: 8,
-  }
+import { withPagination, paginationState } from 'hors'
+
+export const initialState = {
+  ...paginationState,
+  foo: 'baz'
 }
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
   case 'FOO':
@@ -52,6 +53,8 @@ const reducer = (state = initialState, action) => {
 }
 
 const enhancedReducer = withPagination()(reducer)
+
+export default enhancedReducer
 ```
 
 ### Type Glossary
