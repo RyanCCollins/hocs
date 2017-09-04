@@ -31,6 +31,29 @@ const items = [
 
 Enhance a reducer with pagination abilities. (NOTE: I will try to add some selectors to make this more useful for the sake of rendering UI from the state for pagination.)
 
+Example:
+
+```
+const initialState = {
+  pagination: {
+    currentPage: 1,
+    perPage: 8,
+  }
+}
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+  case 'FOO':
+    return {
+      ...state,
+      foo: 'bar',
+    }
+  default: return state
+  }
+}
+
+const enhancedReducer = withPagination()(reducer)
+```
+
 ### Type Glossary
 Below are a few types that you might find useful when reading these docs
 
