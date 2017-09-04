@@ -29,6 +29,8 @@ const items = [
 ### Higher Order Reducers (HOCs)
 - [`withPagination`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withPagination.ts): `(actionPrefix: string) => (reducer: Reducer<State>) => (state: State, action: Action) => State`
 
+Enhance a reducer with pagination abilities. (NOTE: I will try to add some selectors to make this more useful for the sake of rendering UI from the state for pagination.)
+
 ### Type Glossary
 Below are a few types that you might find useful when reading these docs
 
