@@ -29,7 +29,7 @@ const withPagination = (actionPrefix: string = 'UNKNOWN') =>
 
 export default withPagination
 
-export const paginationState: State = {
+export const initialState: State = {
   pagination: {
     currentPage: 1,
     perPage: 8,
