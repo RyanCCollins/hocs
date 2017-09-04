@@ -1,5 +1,5 @@
-# HOCs
-A library of the React HOCs that I use on a daily basis
+# HOCs & HORs
+A library of the React Higher Order goodness that I use on a daily basis, including Higher Order Components, Reducers and more!
 
 ## Docs
 
@@ -25,6 +25,9 @@ const items = [
 ]
 <Component items={items} />
 ```
+
+### Higher Order Reducers (HOCs)
+- [`withPagination`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withPagination.ts): `(actionPrefix: string) => (reducer: Reducer<State>) => (state: State, action: Action) => State`
 
 ### Type Glossary
 Below are a few types that you might find useful when reading these docs
