@@ -36,7 +36,7 @@ export const paginationState: State = {
   },
 }
 
-export const selectPagination = (state) => state.pagination
+export const selectPagination = (state: State): Pagination => state.pagination
 
-export const selectCurrentPage = (state) => selectPagination(state).currentPage
-export const selectPerPage = (state) => selectPagination(state).perPage
+export const selectCurrentPage = (state: State): number => selectPagination(state).currentPage
+export const selectPerPage = (state: State): number => selectPagination(state).perPage
