@@ -1,5 +1,5 @@
-# HOCs
-A library of the React HOCs that I use on a daily basis
+# HOCs & HORs
+A library of the React Higher Order goodness that I use on a daily basis, including Higher Order Components, Reducers and more!
 
 ## Docs
 
@@ -24,6 +24,34 @@ const items = [
   { title: 'two' },
 ]
 <Component items={items} />
+```
+
+### Higher Order Reducers (HOCs)
+- [`withPagination`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withPagination.ts): `(actionPrefix: string) => (reducer: Reducer<State>) => (state: State, action: Action) => State`
+
+Enhance a reducer with pagination abilities. (NOTE: I will try to add some selectors to make this more useful for the sake of rendering UI from the state for pagination.)
+
+Example:
+
+```
+const initialState = {
+  pagination: {
+    currentPage: 1,
+    perPage: 8,
+  }
+}
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+  case 'FOO':
+    return {
+      ...state,
+      foo: 'bar',
+    }
+  default: return state
+  }
+}
+
+const enhancedReducer = withPagination()(reducer)
 ```
 
 ### Type Glossary
