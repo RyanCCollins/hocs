@@ -50,3 +50,9 @@ const withRequest = (actionPrefix: string = ''): HOR => (reducer) =>
   }
 
 export default withRequest
+
+export const initialState = {
+  isLoading: false,
+  error: null,
+  data: null,
+}
