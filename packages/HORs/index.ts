@@ -1,8 +1,11 @@
 export {
   default as withPagination,
-  paginationState,
+  initialState as paginationState,
   selectPagination,
   selectCurrentPage,
   selectPerPage,
 } from './withPagination'
-export { default as withRequest } from './withRequest'
+export {
+  default as withRequest,
+  initialState as requestState,
+} from './withRequest'
