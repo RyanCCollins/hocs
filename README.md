@@ -52,9 +52,12 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-const enhancedReducer = withPagination()(reducer)
+const enhancedReducer = withPagination('HOME_CONTAINER')(reducer)
 
 export default enhancedReducer
+
+// Now to paginate:
+dispatch({ type: 'HOME_CONTAINER/PAGINATE' })
 ```
 
 ### Type Glossary
