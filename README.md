@@ -27,7 +27,7 @@ const items = [
 ```
 
 ### Higher Order Reducers (HORs)
-- [`withPagination`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withPagination.ts): `(actionPrefix: string) => (reducer: Reducer<State>) => (state: State, action: Action) => State`
+- [`withPagination`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withPagination.ts): `(actionPrefix: string) => HOR`
 
 Enhance a reducer with pagination abilities. (NOTE: I will try to add some selectors to make this more useful for the sake of rendering UI from the state for pagination.)
 
