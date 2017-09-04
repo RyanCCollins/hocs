@@ -9,7 +9,7 @@ export interface State {
   pagination: Pagination
 }
 
-const withPagination = (actionPrefix: string) =>
+const withPagination = (actionPrefix: string = 'UNKNOWN') =>
   (reducer: Reducer<State>) => (state: State, action: Action): State => {
     if (action.type !== `${actionPrefix}/PAGINATE`) {
       return reducer(state, action)
