@@ -1,4 +1,5 @@
 import { Reducer, Action } from 'redux'
+import { callReducer } from './utils'
 
 export interface Pagination {
   perPage: number
@@ -12,7 +13,7 @@ export interface State {
 const withPagination = (actionPrefix: string = 'UNKNOWN') =>
   (reducer: Reducer<State>) => (state: State, action: Action): State => {
     if (action.type !== `${actionPrefix}/PAGINATE`) {
-      return reducer(state, action)
+      return callReducer(reducer)(state, action)
     }
     switch (action.type) {
     case `${actionPrefix}/PAGINATE`:

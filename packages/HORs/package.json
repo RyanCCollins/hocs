@@ -1,0 +1,45 @@
+{
+  "name": "hors",
+  "version": "1.0.0",
+  "description": "A library of the React HORs that I use daily",
+  "main": "dist/index.js",
+  "repository": "https://github.com/RyanCCollins/hocs",
+  "author": "Ryan C. Collins <rccproductions@mac.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  },
+  "dependencies": {
+    "@types/enzyme": "^2.8.6",
+    "@types/jest": "^20.0.8",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "@types/recompose": "^0.24.1",
+    "@types/redux": "^3.6.0",
+    "cross-env": "^5.0.5",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "recompose": "^0.25.0",
+    "redux": "^3.7.2",
+    "ts-jest": "^20.0.14",
+    "ts-loader": "^2.3.4",
+    "tslint": "^5.7.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.5"
+  }
+}
