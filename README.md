@@ -63,10 +63,6 @@ dispatch({ type: 'HOME_CONTAINER/PAGINATE' })
 ### Type Glossary
 Below are a few types that you might find useful when reading these docs
 
-```
-type HOC = (Component: JSX.Element) => JSX.Element
-```
+HOC: `type HOC = (Component: JSX.Element) => JSX.Element`
 
-```
-type HOR = (reducer: Reducer<State>) => Reducer<State>
-```
+HOR: `type HOR = (reducer: Reducer<State>) => Reducer<State>`
