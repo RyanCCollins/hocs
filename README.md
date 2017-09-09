@@ -56,7 +56,7 @@ const enhancedReducer = withPagination('HOME_CONTAINER')(reducer)
 
 export default enhancedReducer
 
-// Now to paginate:
+// Now to paginate call an action:
 dispatch({ type: 'HOME_CONTAINER/PAGINATE' })
 ```
 
