@@ -60,6 +60,43 @@ export default enhancedReducer
 dispatch({ type: 'HOME_CONTAINER/PAGINATE' })
 ```
 
+- [`withRequest`](https://github.com/RyanCCollins/hocs/blob/master/packages/HORs/withRequest.ts): `(actionPrefix: string) => HOR`
+
+Enhance a reducer with a request flow, handling error and success.
+
+Example:
+
+```
+import { withRequest, requestState } from 'hors'
+
+export const initialState = {
+  ...requestState,
+  foo: 'baz'
+}
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+  case 'FOO':
+    return {
+      ...state,
+      foo: 'bar',
+    }
+  default: return state
+  }
+}
+
+const enhancedReducer = withRequest('HOME_CONTAINER')(reducer)
+
+export default enhancedReducer
+
+To initiate a request, you can use a thunk:
+const request = () => (dispatch) => {
+  dispatch({ type: 'HOME_CONTAINER/REQUEST_INITIATION' })
+  Request.get(url)
+    .then(payload => dispatch({ type: 'HOME_CONTAINER/REQUEST_SUCCESS', payload }))
+    .catch(error => dispatch({ type: 'HOME_CONTAINER/REQUEST_FAILURE', error }))
+}
+```
 ### Type Glossary
 Below are a few types that you might find useful when reading these docs
 
