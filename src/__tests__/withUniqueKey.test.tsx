@@ -6,6 +6,7 @@ import { withUniqueKey } from '../'
 interface Props {
   items: Array<{ title: string, key?: string }>
 }
+
 const Component = ({ items }: Props): JSX.Element => (
   <ul>
     {items.map((item) =>
