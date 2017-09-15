@@ -1,7 +1,7 @@
 # HOCs & HORs
 A library of the React Higher Order goodness that I use on a daily basis, including Higher Order Components, Reducers and more!
 
-## Docs
+## Documentation
 
 ### Higher Order Components (HOCs)
 Below is a list of HOCs that this library includes
